@@ -8,7 +8,7 @@ const RUBIK_SCRIBBLE_URL = '/fonts/RubikScribble-Regular.ttf';
 const CABIN_SKETCH_URL = '/fonts/CabinSketch-Regular.ttf';
 
 /**
- * HeroText Component - Custom styled for Shan
+ * HeroText Component - Custom styled for Khushal
  */
 const HeroText = ({ position = [0, 0.3, 0] }) => {
     const groupRef = useRef();
@@ -16,20 +16,30 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
     const taglineRefs = useRef([]);
     const { camera } = useThree();
 
-    // Responsive scale based on screen width - FLUID
+    // Responsive scale based on screen width - two-tier for mobile/desktop
     const [scale, setScale] = useState(1);
 
     useEffect(() => {
         const updateScale = () => {
             const width = window.innerWidth;
-            const minWidth = 320;
-            const maxWidth = 1200;
-            const minScale = 0.6;
-            const maxScale = 1.0;
 
-            const clampedWidth = Math.max(minWidth, Math.min(maxWidth, width));
-            const t = (clampedWidth - minWidth) / (maxWidth - minWidth);
-            setScale(minScale + t * (maxScale - minScale));
+            if (width < 768) {
+                // Mobile / portrait: aggressively scale down
+                // 320px → 0.35,  768px → 0.60
+                const minWidth = 320, maxWidth = 768;
+                const minScale = 0.35, maxScale = 0.60;
+                const clamped = Math.max(minWidth, Math.min(maxWidth, width));
+                const t = (clamped - minWidth) / (maxWidth - minWidth);
+                setScale(minScale + t * (maxScale - minScale));
+            } else {
+                // Desktop / landscape: gentle scale
+                // 768px → 0.60,  1200px → 1.0
+                const minWidth = 768, maxWidth = 1200;
+                const minScale = 0.60, maxScale = 1.0;
+                const clamped = Math.max(minWidth, Math.min(maxWidth, width));
+                const t = (clamped - minWidth) / (maxWidth - minWidth);
+                setScale(minScale + t * (maxScale - minScale));
+            }
         };
 
         updateScale();
@@ -43,12 +53,16 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
     const floatY = useRef(0);
     const worldPosVec = useRef(new THREE.Vector3());
 
-    // Letter positions for SHAN split effect (4 letters)
+    // Letter positions for KHUSHAL! split effect (8 chars)
     const letters = useMemo(() => [
-        { char: 'S', baseX: -0.9, splitDir: -1.8 },
-        { char: 'H', baseX: -0.3, splitDir: -0.6 },
-        { char: 'A', baseX: 0.3, splitDir: 0.6 },
-        { char: 'N', baseX: 0.9, splitDir: 1.8 },
+        { char: 'K', baseX: -2.38, splitDir: -3.0 },
+        { char: 'H', baseX: -1.70, splitDir: -2.0 },
+        { char: 'U', baseX: -1.02, splitDir: -1.2 },
+        { char: 'S', baseX: -0.34, splitDir: -0.4 },
+        { char: 'H', baseX:  0.34, splitDir:  0.4 },
+        { char: 'A', baseX:  1.02, splitDir:  1.2 },
+        { char: 'L', baseX:  1.70, splitDir:  2.0 },
+        { char: '!', baseX:  2.38, splitDir:  3.0 },
     ], []);
 
     // Tagline words for split effect
@@ -86,7 +100,7 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
         splitAmount.current = THREE.MathUtils.lerp(splitAmount.current, targetSplit.current, 0.08);
 
-        // Apply split to each letter of SHAN
+        // Apply split to each letter of Khushal
         letterRefs.current.forEach((ref, i) => {
             if (ref) {
                 if (ref.material) ref.material.opacity = 1;
@@ -117,13 +131,13 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
     return (
         <group ref={groupRef} position={position} scale={[scale, scale, 1]}>
-            {/* SHAN Letters */}
+            {/* Khushal Letters */}
             {letters.map((letter, i) => (
                 <Text
                     key={`${letter.char}-${i}`}
                     ref={(el) => (letterRefs.current[i] = el)}
                     position={[letter.baseX, 0.35, 0]}
-                    fontSize={0.85}
+                    fontSize={0.72}
                     font={RUBIK_SCRIBBLE_URL}
                     color="#1a1a1a"
                     outlineWidth={0.014}
@@ -154,10 +168,10 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
             ))}
 
             {/* Decorative doodles */}
-            <SmallStar position={[-1.6, 0.7, 0]} scale={0.07} />
-            <SmallStar position={[1.65, 0.6, 0]} scale={0.05} />
-            <SmallStar position={[-1.3, -1.5, 0]} scale={0.04} />
-            <SmallStar position={[1.3, -1.45, 0]} scale={0.035} />
+            <SmallStar position={[-2.9, 0.7, 0]} scale={0.07} />
+            <SmallStar position={[2.9, 0.6, 0]} scale={0.05} />
+            <SmallStar position={[-2.6, -1.5, 0]} scale={0.04} />
+            <SmallStar position={[2.6, -1.45, 0]} scale={0.035} />
         </group>
     );
 };

@@ -52,7 +52,7 @@ export default function Footer() {
                 letterSpacing: '1.5px'
               }}
             >
-              SHAN
+              SUTHAR KHUSHAL
             </h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--accent-primary)', margin: '0 0 8px', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: 600 }}>
               Creative Full Stack Developer
@@ -89,7 +89,7 @@ export default function Footer() {
           className="footer-bottom-row"
         >
           <div>
-            &copy; {currentYear} Shan. All rights reserved.
+            &copy; {currentYear} SUTHAR KHUSHAL. All rights reserved.
           </div>
           <div>
             Designed with intention. Engineered for performance.

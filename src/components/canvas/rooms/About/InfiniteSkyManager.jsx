@@ -352,7 +352,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 anchorY="middle"
                 font="/fonts/RubikScribble-Regular.ttf"
             >
-                SHAN
+                KHUSHAL
             </Text>
 
             {/* Subtitle - Brand (spreads right) */}
@@ -419,10 +419,10 @@ const AWARDS_DATA = {
         layout: 'certificate_grid',
         title: 'Core Capabilities & Technical Stack',
         items: [
-            { label: 'Full Stack Engineering (React / Next.js / Node)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
-            { label: '3D Canvas & WebGL Experiences (Three.js)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
-            { label: 'High-Performance Motion (GSAP / Framer)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Database & Cloud Architecture (Supabase / Postgres)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Full Stack Engineering (Python / Django / JS)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Cloud Backend & Realtime DB (Firebase / MongoDB)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'AI & Automation Engineering (Python Agents)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Embedded Systems & Hardware (IoT / ESP32)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
         ],
         platformConfig: {
             label: 'EXPERTISE',
@@ -433,12 +433,12 @@ const AWARDS_DATA = {
     sotd: {
         id: 'award-sotd',
         layout: 'certificate_grid',
-        title: 'Frontend & Creative Engineering',
+        title: 'Frontend & Application Engineering',
         items: [
-            { label: 'React & Next.js Web Engineering', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: '3D WebGL Shaders & Canvas Interactions', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'GSAP Scrollytelling & Frame Sequences', date: '2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Responsive Mobile-First Interfaces', date: 'Active', image: '/textures/about/button.webp', url: '#' }
+            { label: 'JavaScript & Modern Web Interfaces', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'User Interface & Mobile-First UX Design', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Dynamic Web Animations & Micro-Interactions', date: '2025', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Responsive Cross-Platform Web Layouts', date: 'Active', image: '/textures/about/button.webp', url: '#' }
         ],
         platformConfig: {
             label: 'DEVELOPER',
@@ -449,12 +449,12 @@ const AWARDS_DATA = {
     sotm: {
         id: 'award-sotm',
         layout: 'certificate_grid',
-        title: 'Full Stack & Cloud Architecture',
+        title: 'Backend, Databases & IoT Systems',
         items: [
-            { label: 'Node.js & Express REST Infrastructure', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Supabase & PostgreSQL Data Modeling', date: '2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Cloud Media & Asset Optimization', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Core Vitals & Sub-Second Hydration', date: 'Active', image: '/textures/about/button.webp', url: '#' }
+            { label: 'Python & Django REST Infrastructure', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Firebase & MongoDB Data Architecture', date: '2025', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Hardware Interfacing & Microcontrollers (ESP32)', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Automated Scripting & File Organization', date: 'Active', image: '/textures/about/button.webp', url: '#' }
         ],
         platformConfig: {
             label: 'FULL STACK',
@@ -465,11 +465,11 @@ const AWARDS_DATA = {
     other: {
         id: 'award-other',
         layout: 'certificate_grid',
-        title: 'Creative Engineering & UI Design',
+        title: 'AI Development & System Automation',
         items: [
-            { label: 'Interactive Storytelling & Physics', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Awwwards-Level Design Systems', date: '2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Fluid Motion & Tactile Interactions', date: '2026', image: '/textures/about/button.webp', url: '#' }
+            { label: 'Automated Code Generation Agents (AutoCode)', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Desktop Voice & Task Automation (F.R.I.D.A.Y.)', date: '2025', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Cybersecurity Logic & Cryptographic Auditing', date: '2026', image: '/textures/about/button.webp', url: '#' }
         ],
         platformConfig: {
             label: 'CREATIVE',
@@ -946,7 +946,7 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
                 >
-                    FULL STACK
+                    BCA DEGREE
                 </Text>
             </group>
 
@@ -969,7 +969,7 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
                 >
-                    CREATIVE DEV
+                    APP DEV
                 </Text>
             </group>
         </group>
@@ -985,20 +985,20 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
 // === EDYTUJ WYSOKOŚĆ TUTAJ (zmień wartość 'y' dla każdego balona) ===
 const BALLOON_CONFIG = [
     // Large balloons (main skills) - front and center
-    { texture: '/textures/about/reactduzybalon.webp', paintedTexture: '/textures/about/reactduzybalon_painted.webp', label: 'React', size: 'large', x: -2.5, y: 2, z: 0.3, phase: 0 },
-    { texture: '/textures/about/threejsduzybalon.webp', paintedTexture: '/textures/about/threejsduzybalon_painted.webp', label: 'Three.js', size: 'large', x: 2.5, y: 2.5, z: 0.2, phase: 1.5 },
-    { texture: '/textures/about/GSAPduzybalon.webp', paintedTexture: '/textures/about/GSAPduzybalon_painted.webp', label: 'GSAP', size: 'large', x: 0, y: 3, z: 0.5, phase: 3 },
+    { texture: '/textures/about/reactduzybalon.webp', paintedTexture: '/textures/about/reactduzybalon_painted.webp', label: 'Python', size: 'large', x: -2.5, y: 2, z: 0.3, phase: 0 },
+    { texture: '/textures/about/threejsduzybalon.webp', paintedTexture: '/textures/about/threejsduzybalon_painted.webp', label: 'Django', size: 'large', x: 2.5, y: 2.5, z: 0.2, phase: 1.5 },
+    { texture: '/textures/about/GSAPduzybalon.webp', paintedTexture: '/textures/about/GSAPduzybalon_painted.webp', label: 'JavaScript', size: 'large', x: 0, y: 3, z: 0.5, phase: 3 },
 
     // Medium balloons - scattered around
-    { texture: '/textures/about/JSSREDNIBALON.webp', paintedTexture: '/textures/about/JSSREDNIBALON_painted.webp', label: 'JavaScript', size: 'medium', x: -4, y: 1, z: -0.3, phase: 0.8 },
-    { texture: '/textures/about/csssrednibalon.webp', paintedTexture: '/textures/about/csssrednibalon_painted.webp', label: 'CSS', size: 'medium', x: 4, y: 1.5, z: -0.2, phase: 2.2 },
-    { texture: '/textures/about/nextjssrednibalon.webp', paintedTexture: '/textures/about/nextjssrednibalon_painted.webp', label: 'Next.js', size: 'medium', x: 0, y: 0.5, z: -0.4, phase: 4 },
+    { texture: '/textures/about/JSSREDNIBALON.webp', paintedTexture: '/textures/about/JSSREDNIBALON_painted.webp', label: 'Firebase', size: 'medium', x: -4, y: 1, z: -0.3, phase: 0.8 },
+    { texture: '/textures/about/csssrednibalon.webp', paintedTexture: '/textures/about/csssrednibalon_painted.webp', label: 'MongoDB', size: 'medium', x: 4, y: 1.5, z: -0.2, phase: 2.2 },
+    { texture: '/textures/about/nextjssrednibalon.webp', paintedTexture: '/textures/about/nextjssrednibalon_painted.webp', label: 'ESP32', size: 'medium', x: 0, y: 0.5, z: -0.4, phase: 4 },
 
     // Small balloons - background accents
-    { texture: '/textures/about/htmlmalybalon.webp', paintedTexture: '/textures/about/htmlmalybalon_painted.webp', label: 'HTML', size: 'small', x: -5.5, y: 2.5, z: -0.8, phase: 1.2 },
+    { texture: '/textures/about/htmlmalybalon.webp', paintedTexture: '/textures/about/htmlmalybalon_painted.webp', label: 'SQL', size: 'small', x: -5.5, y: 2.5, z: -0.8, phase: 1.2 },
     { texture: '/textures/about/gitmalybalon.webp', paintedTexture: '/textures/about/gitmalybalon_painted.webp', label: 'Git', size: 'small', x: 5.5, y: 3, z: -0.7, phase: 2.8 },
-    { texture: '/textures/about/figmamalybalon.webp', paintedTexture: '/textures/about/figmamalybalon_painted.webp', label: 'Figma', size: 'small', x: -3, y: 4.5, z: -0.5, phase: 3.5 },
-    { texture: '/textures/about/firebasemalybalon.webp', paintedTexture: '/textures/about/firebasemalybalon_painted.webp', label: 'Firebase', size: 'small', x: 3.5, y: 4, z: -0.6, phase: 4.5 },
+    { texture: '/textures/about/figmamalybalon.webp', paintedTexture: '/textures/about/figmamalybalon_painted.webp', label: 'HTML', size: 'small', x: -3, y: 4.5, z: -0.5, phase: 3.5 },
+    { texture: '/textures/about/firebasemalybalon.webp', paintedTexture: '/textures/about/firebasemalybalon_painted.webp', label: 'Figma', size: 'small', x: 3.5, y: 4, z: -0.6, phase: 4.5 },
 ];
 
 // Size multipliers for balloon categories

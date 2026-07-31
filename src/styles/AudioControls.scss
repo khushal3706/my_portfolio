@@ -127,3 +127,39 @@
         }
     }
 }
+
+// --- Mobile Adjustments ---
+@media (max-width: 768px) {
+    .audio-controls {
+        top: 0.5rem;
+        right: 0.75rem;
+        padding: 6px 10px;
+        gap: 10px;
+
+        .mute-btn svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        // Volume slider reveal on touch — widen tap area
+        &:active .volume-slider-container,
+        &:focus-within .volume-slider-container {
+            opacity: 1;
+            width: 80px;
+            transform: translateX(0);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .audio-controls {
+        top: 0.25rem;
+        right: 0.5rem;
+        padding: 4px 8px;
+
+        .mute-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

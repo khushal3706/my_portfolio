@@ -45,7 +45,7 @@ export default function Contact() {
   }, []);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('contact@shan.dev');
+    navigator.clipboard.writeText('sutharkhushal1000@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -153,7 +153,7 @@ export default function Contact() {
               </span>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
                 <a
-                  href="mailto:contact@shan.dev"
+                  href="mailto:sutharkhushal1000@gmail.com"
                   style={{
                     fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
                     color: 'var(--text-primary)',
@@ -163,7 +163,7 @@ export default function Contact() {
                   }}
                   className="contact-email-link"
                 >
-                  contact@shan.dev
+                  sutharkhushal1000@gmail.com
                 </a>
                 <button
                   onClick={handleCopyEmail}
@@ -192,7 +192,7 @@ export default function Contact() {
                   Location
                 </span>
                 <span style={{ fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                  India 🇮🇳 (UTC +5:30)
+                  Ahmedabad, Gujarat, India 🇮🇳
                 </span>
               </div>
 
@@ -202,7 +202,7 @@ export default function Contact() {
                 </span>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/khushal3706"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}

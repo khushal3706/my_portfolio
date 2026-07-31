@@ -36,49 +36,49 @@ export const GALLERY_INTERACTION_AUDIO_SETTINGS = {
 // Define the unique projects and their textures
 const FALLBACK_PROJECTS = [
     {
-        id: 'apple-vision-pro',
-        title: 'APPLE VISION PRO EXPERIENCE',
+        id: 'autocode-agent',
+        title: 'AUTOCODE AGENT',
         front: '/textures/gallery/timberkittyprzod.webp',
         painted: '/textures/gallery/timberkittyprzod_painted.webp',
-        url: '#project/apple-vision-pro',
-        description: 'A spatial computing web showcase with frame-by-frame 3D canvas interaction, luxury depth glass rendering, and scroll mechanics.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp']
+        url: 'https://github.com/khushal3706/AutoCode-Agent',
+        description: 'An AI-driven coding assistant designed to automate script generation and streamline developer workflows using LLMs.',
+        techStack: ['/textures/gallery/pythonlogo.webp', '/textures/gallery/jslogo.webp']
     },
     {
-        id: 'bmw-m4-gt3',
-        title: 'BMW M4 GT3 EVO SHOWCASE',
+        id: 'friday-ai',
+        title: 'F.R.I.D.A.Y. AI ASSISTANT',
         front: '/textures/gallery/monetuneprzod.webp',
         painted: '/textures/gallery/monetuneprzod_painted.webp',
-        url: '#project/bmw-m4-gt3',
-        description: 'An interactive automotive experience featuring 360° image sequence animation, live telemetry HUD displays, and Web Audio synthesis.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
+        url: 'https://github.com/khushal3706/-F.R.I.D.A.Y',
+        description: 'A fully modular, Python-powered desktop AI assistant capable of automating OS-level tasks and web scraping.',
+        techStack: ['/textures/gallery/pythonlogo.webp']
     },
     {
-        id: 'luxury-tailor',
-        title: 'LUXURY TAILOR WEBSITE',
+        id: 'security-mind',
+        title: 'SECURITY-MIND',
         front: '/textures/gallery/bioprzod.webp',
         painted: '/textures/gallery/bioprzod_painted.webp',
-        url: '#project/luxury-tailor',
-        description: 'An elegant editorial web experience for a haute couture tailoring house featuring fluid fabric motion, interactive sizing, and luxury UX.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp']
+        url: 'https://github.com/khushal3706/Security-Mind',
+        description: 'A dedicated cybersecurity application for analyzing vulnerabilities, managing secure logic, and data protection.',
+        techStack: ['/textures/gallery/pythonlogo.webp']
     },
     {
-        id: 'fashion-jewellery-ecommerce',
-        title: 'JEWELLERY ECOMMERCE ENGINE',
+        id: 'nexus-ecommerce',
+        title: 'NEXUS E-COMMERCE',
         front: '/textures/gallery/youngmultiprzod.webp',
         painted: '/textures/gallery/youngmultiprzod_painted.webp',
-        url: '#project/fashion-jewellery-ecommerce',
-        description: 'A full stack luxury jewellery platform built for speed and aesthetics, featuring sub-second edge filtering, real-time cart sync, and cloud media pipelines.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
+        url: 'https://github.com/khushal3706',
+        description: 'A comprehensive, high-performance e-commerce platform featuring a custom Django backend and MongoDB integration.',
+        techStack: ['/textures/gallery/djangologo.webp', '/textures/gallery/mongodblogo.webp']
     },
     {
-        id: 'photography-accessories-platform',
-        title: 'PHOTOGRAPHY ACCESSORIES ENGINE',
+        id: 'synctask-board',
+        title: 'SYNCTASK BOARD',
         front: '/textures/gallery/monetuneprzod.webp',
         painted: '/textures/gallery/monetuneprzod_painted.webp',
-        url: '#project/photography-accessories-platform',
-        description: 'A precision full stack gear platform engineered for professional photographers, featuring camera lens compatibility matrices and dark UI.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
+        url: 'https://github.com/khushal3706',
+        description: 'A real-time project management board leveraging Firebase for instant state synchronization across multiple users.',
+        techStack: ['/textures/gallery/firebaselogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
     }
 ];
 
@@ -244,8 +244,8 @@ const GalleryRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
     // We use the same conditional logic: painted on desktop, regular on touch
     const allLogos = useMemo(() => {
         const names = [
-            'csslogo', 'elementorlogo', 'firebaselogo', 'htmllogo',
-            'jslogo', 'netlifylogo', 'phplogo', 'reactlogo',
+            'csslogo', 'djangologo', 'elementorlogo', 'firebaselogo', 'htmllogo',
+            'jslogo', 'mongodblogo', 'netlifylogo', 'phplogo', 'pythonlogo', 'reactlogo',
             'tailwindlogo', 'wordpresslogo'
         ];
         return names.map(name => {

@@ -1,38 +1,38 @@
 export const journeyData = [
   {
     phase: "Stage 01",
-    title: "Frontend Foundations",
-    period: "Foundational Phase",
-    description: "Deep dive into native web engineering. Mastered semantic HTML5 architecture, modern CSS3 layout algorithms, native ES6+ JavaScript execution, and responsive design systems."
+    title: "Secondary Education",
+    period: "Graduation: 2022",
+    description: "Completed 10th Grade (Gujarati Medium) from GSEB Secondary School in Ahmedabad, Gujarat."
   },
   {
     phase: "Stage 02",
-    title: "Modern React Ecosystem",
-    period: "Architecture Phase",
-    description: "Expanded into scalable component architecture. Developed expertise in React hooks, Next.js server rendering, state management paradigms, custom hooks, and modern frontend routing."
+    title: "Higher Secondary Education",
+    period: "Graduation: 2024",
+    description: "Completed 12th Commerce from GSEB Higher Secondary School in Ahmedabad, Gujarat, building a foundation before transitioning into technology."
   },
   {
     phase: "Stage 03",
-    title: "Creative Development",
-    period: "Specialization Phase",
-    description: "Pioneered interactive scrollytelling and motion physics. Mastered GSAP ScrollTrigger timeline orchestration, Lenis smooth scrolling, Three.js 3D viewport rendering, and WebGL fragment shaders."
+    title: "Bachelor of Computer Applications (BCA)",
+    period: "June 2024 - July 2027",
+    description: "Currently in 3rd Year, 5th Semester at Silver Oak University in Ahmedabad. Engaged in coursework covering advanced database management systems, SEO, and full-stack development."
   },
   {
     phase: "Stage 04",
-    title: "Full Stack Applications",
-    period: "Full Stack Phase",
-    description: "Integrated backend engineering pipelines. Engineered Node.js & Express APIs, relational PostgreSQL data schemas with Supabase, cloud media pipelines via Cloudinary, and secure auth layers."
+    title: "Backend & Database Specialization",
+    period: "Development Phase",
+    description: "Completed technical experiments focusing on MongoDB aggregation pipelines, indexing, and document modeling alongside Python, Django, and SQL."
   },
   {
     phase: "Stage 05",
-    title: "Award-Level Interactive Experiences",
-    period: "Flagship Phase",
-    description: "Engineered flagship showcase digital experiences including Apple Vision Pro spatial interactive experience, BMW M4 GT3 EVO telemetry showcase, and bespoke fashion ecommerce platforms."
+    title: "Hardware & IoT Exploration",
+    period: "Experimental Phase",
+    description: "Expanded into embedded systems, building hardware prototypes including a weather station and sensor-based monitoring systems using ESP32, NodeMCU, Arduino, and Raspberry Pi."
   },
   {
     phase: "Stage 06",
-    title: "Freelance Creative Developer",
+    title: "Full-Stack & AI App Development",
     period: "Present Phase",
-    description: "Partnering with visionary brands, agencies, and founders globally to design and engineer immersive digital experiences that merge storytelling, animation, 3D graphics, and scalable full stack code."
+    description: "Leading the development of end-to-end applications like Sathi AI and F.R.I.D.A.Y., combining offline AI intelligence, Firebase databases, and modern UI/UX design principles."
   }
 ];

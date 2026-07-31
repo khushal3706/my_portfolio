@@ -102,7 +102,7 @@ const Doodles = () => {
                     <Squiggle position={[1.4, 0.3, 0.2]} rotation={-0.3} />
 
                     {/* Thought bubble near avatar */}
-                    <ThoughtBubble position={[0.9, 0.7, 0.5]} />
+                    <ThoughtBubble position={[1.5, 0.7, 0.5]} />
                 </>
             )}
         </group>

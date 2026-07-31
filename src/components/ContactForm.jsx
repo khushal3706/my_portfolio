@@ -78,7 +78,7 @@ export default function ContactForm() {
         width: '100%',
         position: 'relative'
       }}
-      aria-label="Send a message to Shan"
+      aria-label="Send a message to Khushal"
     >
       <div style={{ textAlign: 'left', borderBottom: '1px solid var(--border-primary)', paddingBottom: '16px' }}>
         <h3 style={{ fontSize: '1.25rem', fontFamily: 'var(--font-heading)', margin: '0 0 4px', color: 'var(--text-primary)' }}>
@@ -104,7 +104,7 @@ export default function ContactForm() {
             fontWeight: 500
           }}
         >
-          Thank you! Your message was transmitted successfully. Shan will respond within 24 hours.
+          Thank you! Your message was transmitted successfully. Khushal will respond within 24 hours.
         </div>
       )}
 
@@ -123,7 +123,7 @@ export default function ContactForm() {
             fontWeight: 500
           }}
         >
-          Something went wrong. Please try again or email directly at contact@shan.dev
+          Something went wrong. Please try again or email directly at contact@github.com/khushal3706
         </div>
       )}
 

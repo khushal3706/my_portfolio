@@ -117,7 +117,7 @@ export default function Hero({ isLoaded }) {
                 margin: '0 0 6px'
               }}
             >
-              SHAN
+              SUTHAR KHUSHAL
             </h2>
 
             {/* Professional Title Display */}

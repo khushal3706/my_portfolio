@@ -8,28 +8,28 @@ import { useScene } from '../context/SceneContext';
 const ROOM_META = {
     null: {
         path: '/',
-        title: 'Shan — Creative Full Stack Developer & Interactive Web Engineer',
-        description: 'Portfolio of Shan, Creative Full Stack Developer specializing in immersive digital experiences, scrollytelling, 3D web experiences, motion design, and scalable full stack architecture.',
+        title: 'Khushal— Creative Full Stack Developer & Interactive Web Engineer',
+        description: 'Portfolio of Khushal, Creative Full Stack Developer specializing in immersive digital experiences, scrollytelling, 3D web experiences, motion design, and scalable full stack architecture.',
     },
     about: {
         path: '/about',
-        title: 'About — Shan Portfolio',
-        description: 'Learn about Shan — a Creative Full Stack Developer bridging design and development to build immersive digital experiences inspired by Apple, Stripe, and Linear.',
+        title: 'About — Khushal Portfolio',
+        description: 'Learn about Khushal — a Creative Full Stack Developer bridging design and development to build immersive digital experiences inspired by Apple, Stripe, and Linear.',
     },
     gallery: {
         path: '/gallery',
-        title: 'Gallery & Featured Work — Shan Portfolio',
-        description: 'Explore the flagship projects engineered by Shan, including Apple Vision Pro Interactive Experience, BMW M4 GT3 EVO Showcase, Luxury Tailor, and high-performance ecommerce platforms.',
+        title: 'Gallery & Featured Work — Khushal Portfolio',
+        description: 'Explore the flagship projects engineered by Khushal, including Apple Vision Pro Interactive Experience, BMW M4 GT3 EVO Showcase, Luxury Tailor, and high-performance ecommerce platforms.',
     },
     studio: {
         path: '/studio',
-        title: 'The Studio — Shan Portfolio',
-        description: 'Explore Shan\'s interactive 3D studio showcasing full stack engineering architecture, 3D web experiments, and high-performance UI systems.',
+        title: 'The Studio — Khushal Portfolio',
+        description: 'Explore Khushal\'s interactive 3D studio showcasing full stack engineering architecture, 3D web experiments, and high-performance UI systems.',
     },
     contact: {
         path: '/contact',
-        title: 'Contact — Shan Portfolio',
-        description: 'Let\'s build something people remember. Get in touch with Shan for immersive web experiences and scalable full stack applications.',
+        title: 'Contact — Khushal Portfolio',
+        description: 'Let\'s build something people remember. Get in touch with Khushal for immersive web experiences and scalable full stack applications.',
     },
 };
 
@@ -49,7 +49,7 @@ export function getInitialRoomFromUrl() {
 
 export function useDocumentMeta() {
     const { currentRoom, teleportTo, hasEntered } = useScene();
-    const isHandlingPopState = useRef(false);
+    const iKhushaldlingPopState = useRef(false);
     const lastPushedRoom = useRef(undefined); // Track what we last pushed to avoid duplicates
 
     // Update document meta and URL when room changes
@@ -74,16 +74,16 @@ export function useDocumentMeta() {
         if (ogDesc) ogDesc.setAttribute('content', meta.description);
 
         const ogUrl = document.querySelector('meta[property="og:url"]');
-        if (ogUrl) ogUrl.setAttribute('content', `https://shan.dev${meta.path}`);
+        if (ogUrl) ogUrl.setAttribute('content', `https://Khushal.dev${meta.path}`);
 
         // Update canonical link
         const canonicalTag = document.querySelector('link[rel="canonical"]');
         if (canonicalTag) {
-            canonicalTag.setAttribute('href', `https://shan.dev${meta.path}`);
+            canonicalTag.setAttribute('href', `https://Khushal.dev${meta.path}`);
         }
 
         // Push to browser history
-        if (!isHandlingPopState.current && lastPushedRoom.current !== currentRoom) {
+        if (!iKhushaldlingPopState.current && lastPushedRoom.current !== currentRoom) {
             if (lastPushedRoom.current === undefined) {
                 window.history.replaceState({ room: currentRoom }, '', meta.path);
             } else {
@@ -91,7 +91,7 @@ export function useDocumentMeta() {
             }
             lastPushedRoom.current = currentRoom;
         }
-        isHandlingPopState.current = false;
+        iKhushaldlingPopState.current = false;
     }, [currentRoom]);
 
     // Handle browser back/forward buttons
@@ -99,7 +99,7 @@ export function useDocumentMeta() {
         const handlePopState = (e) => {
             const room = e.state ? e.state.room : null;
             if (room !== undefined) {
-                isHandlingPopState.current = true;
+                iKhushaldlingPopState.current = true;
                 lastPushedRoom.current = room;
                 teleportTo(room);
             }
